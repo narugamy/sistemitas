@@ -5,17 +5,17 @@
 
   <div class="field">
     <%= f.label :nombres %><br />
-    <%= f.email_field :nombres, autofocus: true %>
+    <%= f.text_field :nombres%>
   </div>
 
   <div class="field">
     <%= f.label :apellidos %><br />
-    <%= f.email_field :apellidos %>
+    <%= f.text_field :apellidos %>
   </div>
 
   <div class="field">
     <%= f.label :nombre_perfil %><br />
-    <%= f.email_field :nombre_perfil %>
+    <%= f.text_field :nombre_perfil %>
   </div>
 
   <div class="field">
@@ -35,7 +35,7 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+  <br>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

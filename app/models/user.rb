@@ -4,6 +4,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :nombres,:apellidos,:nombre_perfil,
-  				  :email, :password, :password_confirmation,:remember_me	
+
+  attr_accessible :nombres, :apellidos, :nombre_perfil,
+  				  :email, :password, :password_confirmation
+
+  has_many :statuses
+
+  def nombre_completo
+  	nombres + "  " + apellidos
+  end
 end
