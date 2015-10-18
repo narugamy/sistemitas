@@ -10,13 +10,16 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
-			<a href="#" class="navbar-brand">KiritoMster</a>
+			<a href="#" class="navbar-brand">KiritoM@ster</a>
 			<ul class="nav navbar-nav">
 				<li class="active"><%= link_to "Status", statuses_path %></li>
 			</ul>
 		</div>
 	</div>
+	
 	<div class="container">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
 		<%= yield %>
 	</div>
 
